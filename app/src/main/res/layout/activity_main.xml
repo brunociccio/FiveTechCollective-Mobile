@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título 1 -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FiveTech"
+        android:textColor="@color/button_home"
+        android:textStyle="bold"
+        android:textSize="56sp"
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Título 2 -->
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collective"
+        android:textColor="@color/button_home"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-18dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:lineSpacingExtra="-8dp" />
+
+    <!-- Bloco de Login -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/colorBlock"
+        android:layout_width="0dp"
+        android:layout_height="580dp"
+        android:background="@drawable/rounded_backgournd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/background_login"
+        android:backgroundTintMode="src_atop"
+        android:outlineAmbientShadowColor="@color/background_login"
+        android:outlineSpotShadowColor="@color/background_login"
+        android:clipToOutline="true"
+        tools:ignore="NotSibling">
+
+        <!-- Campo de Login -->
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rounded_white_background"
+            android:hint="Login"
+            android:padding="12dp"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Campo de Senha -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_white_background"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toBottomOf="@id/editTextLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Botão de Entrar -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_button"
+            android:textSize="15sp"
+            android:text="Entrar"
+            android:textColor="@color/background_color"
+            android:textStyle="bold"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Botão de Login Apple -->
+        <Button
+            android:id="@+id/buttonLoginApple"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_button"
+            android:text="Login Apple"
+            android:textColor="@color/background_color"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Botão de Login Google -->
+        <Button
+            android:id="@+id/buttonLoginGoogle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_button"
+            android:text="Login Google"
+            android:textColor="@color/background_color"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/buttonLoginApple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Layout horizontal para os botões "Registre-se" e "Esqueceu a senha?" -->
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/buttonLoginGoogle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <!-- Botão de Registre-se -->
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="@android:color/transparent"
+                android:text="Registre-se"
+                android:textColor="@color/background_color"
+                android:textSize="14sp" />
+
+            <!-- Botão de Esqueceu a senha? -->
+            <Button
+                android:id="@+id/buttonForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Esqueceu a senha?"
+                android:textColor="@color/background_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

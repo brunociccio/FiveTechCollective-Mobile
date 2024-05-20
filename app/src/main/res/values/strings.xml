@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"><font color="#FFFFFF">FiveTech </font><font color="#FB6D48">Collective</font></string>
+    <string name="activity_label_pagina_cinco"><font color="#FFFFFF">FiveTech </font><font color="#FB6D48">Collective</font></string>
+    <string name="activity_label_pagina_quatro"><font color="#FFFFFF">FiveTech </font><font color="#FB6D48">Collective</font></string>
+    <string name="activity_label_pagina_tres"><font color="#FFFFFF">FiveTech </font><font color="#FB6D48">Collective</font></string>
+    <string name="activity_label_pagina_dois"><font color="#FFFFFF">FiveTech </font><font color="#FB6D48">Collective</font></string>
+</resources>

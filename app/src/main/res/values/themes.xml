@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema baseado no AppCompat -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_color</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColorPrimary">@color/white</item> <!-- Cor do texto "FiveTech" -->
+        <item name="android:textColorSecondary">@color/button_home</item> <!-- Cor do texto "Collective" -->
+    </style>
+
+</resources>
+
+
+
