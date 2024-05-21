@@ -1,19 +1,113 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Primeiro Bloco Branco -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/whiteBlock1"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rounded_white_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+        <!-- Botão no Primeiro Bloco Branco -->
+        <Button
+            android:id="@+id/buttonInWhiteBlock1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangular_button"
+            android:textStyle="bold"
+            android:text="Clientes Ativos - Montadoras"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Segundo Bloco Branco -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/whiteBlock2"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rounded_white_background"
+        app:layout_constraintTop_toBottomOf="@id/whiteBlock1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+        <!-- Botão no Segundo Bloco Branco -->
+        <Button
+            android:id="@+id/buttonInWhiteBlock2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangular_button"
+            android:text="Gráficos"
+            android:textStyle="bold"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Terceiro Bloco Branco -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/whiteBlock3"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rounded_white_background"
+        app:layout_constraintTop_toBottomOf="@id/whiteBlock2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+        <!-- Botão no Terceiro Bloco Branco -->
+        <Button
+            android:id="@+id/buttonInWhiteBlock3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangular_button"
+            android:text="Estratégias"
+            android:textStyle="bold"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Botão "Clientes ativos" -->
     <Button
         android:id="@+id/buttonToPage3"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text="Página 3"
+        android:text="Clientes ativos"
         android:textStyle="bold"
         android:textSize="15sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
         android:layout_marginBottom="10dp"
         android:layout_marginStart="60dp"
@@ -21,21 +115,23 @@
         android:textColor="@color/background_color"
         android:gravity="center"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@id/buttonToMain"
+        app:layout_constraintTop_toBottomOf="@id/whiteBlock3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Botão "Voltar para Página de Login" -->
     <Button
         android:id="@+id/buttonToMain"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text="Voltar para Página Principal"
+        android:text="Voltar para Página de Login"
         android:textStyle="bold"
         android:textSize="13sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_button"
         android:layout_marginBottom="40dp"
         android:layout_marginStart="60dp"
@@ -43,9 +139,10 @@
         android:textColor="@color/background_color"
         android:gravity="center"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToPage3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
