@@ -5,11 +5,10 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/buttonToPage4"
+        android:id="@+id/buttonToPage2"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text="Voltar para Página 4"
-        android:textStyle="bold"
+        android:text="Voltar para Página 2"
         android:textSize="14sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"

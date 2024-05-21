@@ -24,7 +24,6 @@
             android:layout_height="40dp"
             android:background="@drawable/rounded_button"
             android:backgroundTint="#D4BCF0"
-            android:textStyle="bold"
             android:text="Clientes Ativos - Montadoras"
             android:textColor="@color/background_color"
             app:layout_constraintTop_toTopOf="parent"
@@ -56,7 +55,6 @@
             android:background="@drawable/rounded_button"
             android:backgroundTint="#D4BCF0"
             android:text="Gráficos"
-            android:textStyle="bold"
             android:textColor="@color/background_color"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +86,6 @@
             android:background="@drawable/rounded_button"
             android:backgroundTint="#D4BCF0"
             android:text="Estratégias"
-            android:textStyle="bold"
             android:textColor="@color/background_color"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -98,43 +95,18 @@
             android:layout_marginEnd="0dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Botão "Clientes ativos" -->
-    <Button
-        android:id="@+id/buttonToPage3"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:text="Clientes ativos"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:textColor="@color/background_color"
-        android:gravity="center"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/whiteBlock3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <!-- Botão "Voltar para Página de Login" -->
     <Button
         android:id="@+id/buttonToMain"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text="Voltar para Página de Login"
-        android:textStyle="bold"
-        android:textSize="13sp"
+        android:text="Voltar para Login"
+        android:textSize="14sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="55dp"
         android:background="@drawable/rounded_button"
         android:layout_marginBottom="40dp"
         android:layout_marginStart="60dp"
@@ -142,7 +114,7 @@
         android:textColor="@color/background_color"
         android:gravity="center"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/buttonToPage3"
+        app:layout_constraintTop_toBottomOf="@id/whiteBlock3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

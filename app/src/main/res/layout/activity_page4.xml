@@ -5,32 +5,10 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/buttonToPage5"
+        android:id="@+id/buttonToPage2"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text="Página 5"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:background="@drawable/rounded_button"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:textColor="@color/background_color"
-        android:gravity="center"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@id/buttonToPage3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonToPage3"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:text="Voltar para Página 3"
+        android:text="Voltar para Página 2"
         android:textSize="14sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"

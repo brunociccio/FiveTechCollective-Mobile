@@ -13,9 +13,9 @@ class PaginaCinco : AppCompatActivity() {
         binding = ActivityPage5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configurando o botão para voltar para PaginaQuatro
-        binding.buttonToPage4.setOnClickListener {
-            val intent = Intent(this, PaginaQuatro::class.java)
+        // Configurando o botão para voltar para PaginaDois
+        binding.buttonToPage2.setOnClickListener {
+            val intent = Intent(this, PaginaDois::class.java)
             startActivity(intent)
         }
     }

@@ -37,11 +37,6 @@ class PaginaDois : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Configurando o botão "Clientes ativos" para ir para PaginaTres (ou outra página)
-        binding.buttonToPage3.setOnClickListener {
-            val intent = Intent(this, PaginaTres::class.java)
-            startActivity(intent)
-        }
     }
 }
 

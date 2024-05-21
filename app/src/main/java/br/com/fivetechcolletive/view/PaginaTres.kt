@@ -18,11 +18,5 @@ class PaginaTres : AppCompatActivity() {
             val intent = Intent(this, PaginaDois::class.java)
             startActivity(intent)
         }
-
-        // Configurando o botão para ir para a PaginaQuatro
-        binding.buttonToPage4.setOnClickListener {
-            val intent = Intent(this, PaginaQuatro::class.java)
-            startActivity(intent)
-        }
     }
 }
