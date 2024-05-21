@@ -19,12 +19,31 @@ class PaginaDois : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Configurando o botão para ir para a PaginaTres
+        // Configurando o botão no primeiro bloco branco para ir para PaginaTres
+        binding.buttonInWhiteBlock1.setOnClickListener {
+            val intent = Intent(this, PaginaTres::class.java)
+            startActivity(intent)
+        }
+
+        // Configurando o botão no segundo bloco branco para ir para PaginaQuatro
+        binding.buttonInWhiteBlock2.setOnClickListener {
+            val intent = Intent(this, PaginaQuatro::class.java)
+            startActivity(intent)
+        }
+
+        // Configurando o botão no terceiro bloco branco para ir para PaginaCinco
+        binding.buttonInWhiteBlock3.setOnClickListener {
+            val intent = Intent(this, PaginaCinco::class.java)
+            startActivity(intent)
+        }
+
+        // Configurando o botão "Clientes ativos" para ir para PaginaTres (ou outra página)
         binding.buttonToPage3.setOnClickListener {
             val intent = Intent(this, PaginaTres::class.java)
             startActivity(intent)
         }
     }
 }
+
 
 
